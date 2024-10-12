@@ -1,0 +1,59 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .advice-box {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .advice-box h2 {
+            text-align: center;
+            margin: 0;
+        }
+        .advice-box p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .generate-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .generate-btn:hover {
+            opacity: 0.8;
+        }
+        @media only screen and (max-width: 600px) {
+            .advice-box {
+                width: 80%;
+            }
+        }
+        @keyframes animatedAdvice {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .animated-advice {
+            animation: animatedAdvice 2s ease-in-out infinite;
+        }
+    
